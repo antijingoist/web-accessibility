@@ -1,0 +1,53 @@
+/* Example stylesheet for to increase readability on websites */
+
+/* Shameless plug, but use a font designed 
+   for greater readability than just looking cool. 
+   This one is designed for dyslexic readers, though
+   it can be useful to increase readability for anyone 
+   else                                                 */
+@font-face{
+	font-family: "open-dyslexic";
+	src: url('open-dyslexic.ttf');
+}
+
+/* Use an off-white background. Some users need high
+   contrast for better reading. Some need low contrast. 
+   A happy medium would be off white to reduce "glare"
+   and black text. Anyone that needs a greater extreme
+   likely overrides stylesheets.                       
+   The text is colored dark blue to assist with "glare"
+   issues, but also to make the black symbols subtly stand
+   out.                                                  */
+
+body {
+	font-size: 14px;
+	line-height: 200%;
+	background: snow;
+	margin: auto 0;
+	padding: 0 100;
+	color: #1A0033; 
+}
+
+/* the highlight class is being used in conjuction 
+   with a script that results in symbols being colored 
+   differently. This helps comprehension by making them
+   subtly more visable.                                 */
+h1, h2, h3, h4, .highlight {
+	font-style: bold;
+	color: black;
+}
+.highlight {
+	font-size: 125%;
+}
+
+/* alternate paragraph shading helps users stay
+   on track while reading. This shading is very 
+   subtle so it is not annoying, but it still 
+   helps.                                       */
+p:nth-child(even) {
+	background-color: rgba(0,0,0, .03);
+}
+
+.open-dyslexic {
+	font-family: "open-dyslexic";
+}
