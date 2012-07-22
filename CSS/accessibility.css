@@ -5,9 +5,34 @@
    This one is designed for dyslexic readers, though
    it can be useful to increase readability for anyone 
    else                                                 */
+
 @font-face{
-	font-family: "open-dyslexic";
-	src: url('open-dyslexic.ttf');
+	font-family: "opendyslexic";
+	src: url('../fonts/OpenDyslexic-Regular.otf');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face{
+	font-family: "opendyslexic";
+	src: url('../fonts/OpenDyslexic-Italic.ttf');
+	font-style: italic;
+	font-weight: normal;
+}
+@font-face{
+	font-family: "opendyslexic";
+	src: url('../fonts/OpenDyslexic-Bold.ttf');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face{
+	font-family: "opendyslexic";
+	src: url('../fonts/OpenDyslexic-BoldItalic.ttf');
+	font-weight: bold;
+	font-style: italic;
+}
+
+* {
+   font-family: "opendyslexic" !important;
 }
 
 /* Use an off-white background. Some users need high
@@ -18,7 +43,6 @@
    The text is colored dark blue to assist with "glare"
    issues, but also to make the black symbols subtly stand
    out.                                                  */
-
 body {
 	font-size: 14px;
 	line-height: 200%;
@@ -44,10 +68,15 @@ h1, h2, h3, h4, .highlight {
    on track while reading. This shading is very 
    subtle so it is not annoying, but it still 
    helps.                                       */
-p:nth-child(even) {
-	background-color: rgba(0,0,0, .03);
+p:nth-child(even), li:nth-child(even) {
+	background-color: rgba(0,0,0, 0.03);
 }
 
-.open-dyslexic {
-	font-family: "open-dyslexic";
+
+/* highlight text under cursor helps users focus
+   on what they are currently reading. This shading
+   is darker than the alt-paragraph shading.        */
+p:hover, li:hover {
+   background-color: rgba(0,0,0, 0.5) !important;
+
 }
