@@ -35,7 +35,7 @@ function symbolPop() {
                                 '\\');
                                 
     hiliteSymbols.forEach(function( callback, thisArg ) {
-                                    $('body p').highlight(this);
+                                    $('body').highlight(this);
                                     }
                                     );
 }
