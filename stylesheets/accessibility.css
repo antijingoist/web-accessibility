@@ -69,7 +69,7 @@ h1, h2, h3, h4, .highlight {
    subtle so it is not annoying, but it still 
    helps.                                       */
 p:nth-child(even), li:nth-child(even) {
-	background-color: rgba(0,0,0, 0.03);
+	background-color: rgba(0,0,0, 0.05);
 }
 
 
@@ -77,6 +77,6 @@ p:nth-child(even), li:nth-child(even) {
    on what they are currently reading. This shading
    is darker than the alt-paragraph shading.        */
 p:hover, li:hover {
-   background-color: rgba(0,0,0, 0.5) !important;
+   background-color: rgba(0,0,0, 0.1) !important;
 
 }
