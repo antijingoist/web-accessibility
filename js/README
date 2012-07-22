@@ -1,0 +1,13 @@
+You need to use these in the following order: 
+jquery
+jquery.highlight-3.js
+symbolpop.js
+
+And then, when the page is ready, call symbolPop:
+
+    <script type="text/javascript">
+    		 $(document).ready(function(){
+		 	//using highlight to make symbols more visible
+   			symbolPop();
+		 });
+    </script>
