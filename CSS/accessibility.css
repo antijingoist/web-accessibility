@@ -14,19 +14,19 @@
 }
 @font-face{
 	font-family: "opendyslexic";
-	src: url('../fonts/OpenDyslexic-Italic.ttf');
+	src: url('../fonts/OpenDyslexic-Italic.otf');
 	font-style: italic;
 	font-weight: normal;
 }
 @font-face{
 	font-family: "opendyslexic";
-	src: url('../fonts/OpenDyslexic-Bold.ttf');
+	src: url('../fonts/OpenDyslexic-Bold.otf');
 	font-weight: bold;
 	font-style: normal;
 }
 @font-face{
 	font-family: "opendyslexic";
-	src: url('../fonts/OpenDyslexic-BoldItalic.ttf');
+	src: url('../fonts/OpenDyslexic-BoldItalic.otf');
 	font-weight: bold;
 	font-style: italic;
 }
