@@ -15,7 +15,7 @@
     		 $(document).ready(function(){
 		 	//using highlight to make symbols more visible
    			setTimeout('symbolPop()', 500);
-   			   			$('body').mousemove(function(event) {
+            $('body').mousemove(function(event) {
       			$("#ruler").css('top', event.pageY - 20);
       			$("#ruler").css('width', $(window).innerWidth());
             });
@@ -39,7 +39,7 @@
   </head>
 
   <body>
-<div id="ruler" style="height: 1.3em; background-color: rgba(0,0,0,.1); position: absolute; top=-100px; z-index: -1"></div>
+<div id="ruler" style="height: 1.5em; background-color: rgba(0,0,0,.1); position: absolute; top=-100px; z-index: 0"></div>
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
