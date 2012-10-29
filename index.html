@@ -15,9 +15,12 @@
     		 $(document).ready(function(){
 		 	//using highlight to make symbols more visible
    			setTimeout('symbolPop()', 500);
+   			   			$('body').mousemove(function(event) {
+      			$("#ruler").css('top', event.pageY - 20);
+      			$("#ruler").css('width', $(window).innerWidth());
+            });
 		 });
     </script>
-        <script src="js/readingBar.js" type="text/javascript"></script>
 
     <title>Web-accessibility</title>
     <script type="text/javascript">
