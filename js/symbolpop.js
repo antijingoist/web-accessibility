@@ -1,41 +1,45 @@
 // Accessablize js.
 // This is a hack, but needed it to be done quickly.
 // Send me a round-tuit and i'll fix it
+
    			
 function symbolPop() {
-    hiliteSymbols = new Array(".",
-                                '\”',
-                                '\"',
-                                '\“',
-                                ",",
-                                ":",
-                                ";",
-                                "(",
-                                ")",
-                                "-",
-                                "[",
-                                "]",
-                                "!",
-                                "@",
-                                "$",
-                                "#",
-                                "%",
-                                "{",
-                                "}",
-                                "<",
-                                ">",
-                                "*",
-                                "^",
-                                "~",
-                                "?",
-                                "/",
-                                "+",
-                                "=",
-                                "|",
+    var hiliteSymbols = new Array('.',
+                                '”',
+                                '"',
+                                '“',
+                                ',',
+                                ':',
+                                ';',
+                                '(',
+                                ')',
+                                '-',
+                                '[',
+                                ']',
+                                '!',
+                                '@',
+                                '$',
+                                '#',
+                                '%',
+                                '{',
+                                '}',
+                                '<',
+                                '>',
+                                '*',
+                                '^',
+                                '~',
+                                '?',
+                                '/',
+                                '+',
+                                '=',
+                                '|',
                                 '\\');
-                                
-    hiliteSymbols.forEach(function( callback, thisArg ) {
-                 $('body').highlight(hiliteSymbols[index]);
-                                    }
-                                    );
+
+    if (!(/facebook/.test(self.location.href))) {
+        $('body').css('color', '#13295d !important');
+
+        for (var index in hiliteSymbols) {
+            $('body').highlight(hiliteSymbols[index]);
+        }
+    }
 }
