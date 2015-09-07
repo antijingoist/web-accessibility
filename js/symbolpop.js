@@ -1,45 +1,9 @@
 // Accessablize js.
-// This is a hack, but needed it to be done quickly.
-// Send me a round-tuit and i'll fix it
 
-   			
-function symbolPop() {
-    var hiliteSymbols = new Array('.',
-                                '”',
-                                '"',
-                                '“',
-                                ',',
-                                ':',
-                                ';',
-                                '(',
-                                ')',
-                                '-',
-                                '[',
-                                ']',
-                                '!',
-                                '@',
-                                '$',
-                                '#',
-                                '%',
-                                '{',
-                                '}',
-                                '<',
-                                '>',
-                                '*',
-                                '^',
-                                '~',
-                                '?',
-                                '/',
-                                '+',
-                                '=',
-                                '|',
-                                '\\');
+function symbolPop(theElement) {
+//Will apply a span style to punctuation and capital letters that you can use to make more obvious
+   var largeString = "";
 
-    if (!(/facebook/.test(self.location.href))) {
-        $('body').css('color', '#13295d !important');
-
-        for (var index in hiliteSymbols) {
-            $('body').highlight(hiliteSymbols[index]);
-        }
-    }
+   largeString = $(theElement).html().replace(/[A-Z]{1}|!|\.|\?|\$\s?(\d+[\.\s,\dk]+)|(\d+[\.\s,\dk]+)\$s/g, '<span class="symbolPop">$&</span>');
+   $(theElement).html(largeString);
 }
