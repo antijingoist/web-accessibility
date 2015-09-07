@@ -5,6 +5,6 @@ function symbolPop(theElement) {
    theElement = theElement || "body";
    var largeString = "";
 
-   largeString = $(theElement).html().replace(/[A-Z]{1}|!|\.|\,|\?|\$\s?(\d+[\.\s,\dk]+)|(\d+[\.\s,\dk]+)\$s/g, '<span class="symbolPop">$&</span>');
+   largeString = $(theElement).html().replace(/(?:((\<\ba href\b.*\"\>.*\<\/\a\>)))|([A-Z]{1})|!|\.|\,|\?|\$\s?(\d+[\.\s,\dk]+)|(\d+[\.\s,\dk]+)\$s/g, '<span class="symbolPop">$&</span>');
    $(theElement).html(largeString);
 }
