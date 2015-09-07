@@ -14,7 +14,7 @@
     <script type="text/javascript">
     		 $(document).ready(function(){
 		 	//using highlight to make symbols more visible
-   			setTimeout('symbolPop()', 500);
+   			setTimeout('symbolPop("#main_content")', 500);
             $('body').mousemove(function(event) {
       			$("#ruler").css('top', event.pageY - 20);
       			$("#ruler").css('width', $(window).innerWidth());
