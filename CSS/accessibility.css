@@ -55,7 +55,7 @@ body {
 /* the highlight class is being used in conjuction 
    with a script that results in symbols being colored 
    differently. This helps comprehension by making them
-   subtly more visable.                                 */
+   subtly more visible.                                 */
 h1, h2, h3, h4, .highlight {
 	font-style: bold;
 	color: black;
